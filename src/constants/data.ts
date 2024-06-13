@@ -60,3 +60,42 @@ export const InterestUptoCardData = [
     }
   },
 ];
+
+export const planCardData = [
+  {
+    id: 1,
+    statusTitle: "Video KYC",
+    bankName: "Utkarsh SF Bank FD Plan 2",
+    date: "28",
+    monthYear: "Oct, 2023",
+    depositAmount: "20,000",
+    tenure: "2 Years",
+    interestRate: "9.10",
+    btn1: "Complete Now",
+    btn2: "Reschedule"
+  },
+  {
+    id: 2,
+    statusTitle: "Pending Payment",
+    bankName: "Bajaj Finserv Corp FD 1",
+    date: "30",
+    monthYear: "Oct, 2023",
+    depositAmount: "25,000",
+    tenure: "18 Months",
+    interestRate: "8.10",
+    btn1: "Pay Now",
+    btn2: "Cancel Application"
+  },
+  {
+    id: 3,
+    statusTitle: "Upcoming FD Maturity",
+    bankName: "Shriram Finance Corp FD 1",
+    date: "30",
+    monthYear: "Oct, 2023",
+    depositAmount: "25,000",
+    tenure: "18 Months",
+    interestRate: "8.10",
+    btn1: "Renew Now",
+    btn2: "Compare other FDs"
+  },
+]
