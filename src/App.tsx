@@ -3,6 +3,7 @@ import InterestUptoCard from './components/cards/InterestUptoCard';
 import { InterestUptoCardData, planCardData } from './constants/data';
 import PlanCard from './components/cards/PlanCard';
 import Heading from './components/common/Heading';
+import FDPortfolio from './components/charts/FDPortfolio';
 
 const App: React.FC = () => {
 
@@ -11,8 +12,11 @@ const App: React.FC = () => {
   return (
     <>
       <Heading title={" Welcome, Johan Paul"} />
+      <div>
+        <FDPortfolio />
+      </div>
 
-      <div className='bg-[#F7F8FA] flex'>
+      <div className='bg-[#F7F8FA] '>
 
 
         {InterestUptoCardData.map((item) => (
