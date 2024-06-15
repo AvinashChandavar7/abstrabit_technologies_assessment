@@ -35,7 +35,7 @@ const FDTimeline: React.FC = () => {
   const totalMonths = calendarItems.length * 12;
 
   return (
-    <div className="relative w-[822px] h-[286px] p-4 ">
+    <div className="relative w-full p-4 bg-white border shadow-md h-fit ">
       <h1 className="mb-4 text-2xl font-bold">FD Maturity Timeline</h1>
 
       <div className="relative w-full border">
@@ -64,7 +64,7 @@ const FDTimeline: React.FC = () => {
                         return (
                           <div
                             key={fdIndex}
-                            className="absolute flex items-center h-6 bg-[#3B39D9] rounded-full top-5"
+                            className="absolute flex items-center h-6 bg-[#3B39D9] rounded-full top-10"
                             style={{
                               left: `${(startIndex / totalMonths) * 100}%`,
                               width: `${(spanLength / totalMonths) * 100}%`,

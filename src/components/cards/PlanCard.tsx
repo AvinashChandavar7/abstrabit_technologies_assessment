@@ -17,7 +17,7 @@ const PlanCard: React.FC<PlanCardProps> = ({
   depositAmount, tenure, interestRate, btn1, btn2
 }) => {
   return (
-    <div className='w-[400px] h-[220px] bg-white flex flex-col justify-evenly px-4 py-2 border shadow shadow-[0px 5px 10px #0000000D]'>
+    <div className='w-[400px] min-h-[240px] h-full bg-white flex flex-col justify-evenly px-4 py-2 border shadow shadow-[0px 5px 10px #0000000D]'>
       {/* 1 */}
       <h1 className='text-[16px] font-bold'>{statusTitle}</h1>
 
@@ -37,15 +37,15 @@ const PlanCard: React.FC<PlanCardProps> = ({
           <div className='grid grid-cols-3 gap-2'>
             <div>
               <h1 className='text-[#929294] text-sm'>Deposit Amt</h1>
-              <p className='font-bold text-sm'>Rs. {depositAmount}</p>
+              <p className='text-sm font-bold'>Rs. {depositAmount}</p>
             </div>
             <div>
               <h1 className='text-[#929294] text-sm'>Tenure</h1>
-              <p className='font-bold text-sm'>{tenure}</p>
+              <p className='text-sm font-bold'>{tenure}</p>
             </div>
             <div>
               <h1 className='text-[#929294] text-sm'>Interest Rate</h1>
-              <p className='font-bold text-sm'>{interestRate}%</p>
+              <p className='text-sm font-bold'>{interestRate}%</p>
             </div>
           </div>
         </div>

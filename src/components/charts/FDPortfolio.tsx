@@ -57,7 +57,7 @@ const FDPortfolio: React.FC = () => {
           fill="#ffffff"
           textAnchor="middle"
           dominantBaseline="central"
-          className="text-sm font-semibold text-center text-balance"
+          className="text-[10px] font-semibold text-center text-balance"
         >
           {`${fDPortfolioData[index][selectedMetric]} (${fDPortfolioData[index].percentage}%)`}
         </text>
@@ -68,7 +68,7 @@ const FDPortfolio: React.FC = () => {
   );
 
   return (
-    <div className="w-full p-4 border shadow-md">
+    <div className="h-full max-w-full p-4 bg-white border shadow-md w-fit">
 
       <div className="flex items-center justify-between gap-2">
         <h1 className="text-2xl font-bold">Your FD Portfolio</h1>
@@ -85,14 +85,14 @@ const FDPortfolio: React.FC = () => {
         </div>
       </div>
 
-      <PieChart width={550} height={300}>
+      <PieChart width={550} height={230}>
         <Pie
           data={fDPortfolioData}
           dataKey={selectedMetric}
           nameKey="name"
           cx="50%"
           cy="50%"
-          outerRadius={140}
+          outerRadius={100}
           fill="#8884d8"
           labelLine={false}
           label={renderCustomizedLabel}

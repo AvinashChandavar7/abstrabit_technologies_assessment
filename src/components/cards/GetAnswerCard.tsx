@@ -11,7 +11,7 @@ export interface AnswerCardDataProps {
 const GetAnswerCard: React.FC<AnswerCardDataProps> = ({ title, content, link }) => {
 
   return (
-    <div className="flex flex-col p-5 justify-around w-[256.67px] h-[194px] bg-white shadow shadow-[0px 5px 10px #0000000D]  rounded-md">
+    <div className="flex flex-col p-5 justify-around min-w-[256.67px] w-full h-[194px] bg-white shadow shadow-[0px 5px 10px #0000000D]  rounded-md">
       <h1 className="text-xl font-bold break-words max-w-[170px]">{title}</h1>
       <p className="text-sm text-gray-700">{content}</p>
       <a
