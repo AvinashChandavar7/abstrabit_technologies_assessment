@@ -1,3 +1,4 @@
+import { AnswerCardDataProps } from "../components/cards/GetAnswerCard";
 import { DataItem } from "../components/charts/FDPortfolio";
 
 export const InterestUptoCardData = [
@@ -107,4 +108,26 @@ export const fDPortfolioData: DataItem[] = [
   { name: 'Shriram Finance', value: 20000, percentage: 20, color: "#FA9D17" },
   { name: 'Mahindra Finance', value: 15000, percentage: 15, color: "#B9C606" },
   { name: 'Utkarsh Small Finance Bank', value: 40000, percentage: 40, color: "#59CBD3" },
+];
+
+export const getAnswerCardData: AnswerCardDataProps[] = [
+  {
+    id: 1,
+    title: 'How FDs are taxed',
+    content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    link: '#',
+  },
+  {
+    id: 2,
+    title: 'How FDs are taxed',
+    content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    link: '#',
+  },
+  {
+    id: 3,
+    title: 'How FDs are taxed',
+    content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    link: '#',
+  },
+
 ];

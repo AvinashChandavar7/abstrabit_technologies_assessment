@@ -1,17 +1,31 @@
 import React from 'react';
 import InterestUptoCard from './components/cards/InterestUptoCard';
-import { InterestUptoCardData, planCardData } from './constants/data';
+import { InterestUptoCardData, getAnswerCardData, planCardData } from './constants/data';
 import PlanCard from './components/cards/PlanCard';
 import Heading from './components/common/Heading';
 import FDPortfolio from './components/charts/FDPortfolio';
+import GetAnswerCard from './components/cards/GetAnswerCard';
 
 const App: React.FC = () => {
+
 
 
 
   return (
     <>
       <Heading title={" Welcome, Johan Paul"} />
+
+      <div>
+        {getAnswerCardData.map((item) => (
+          <GetAnswerCard
+            key={item.id}
+            id={item.id}
+            title={item.title}
+            content={item.content}
+            link={item.link}
+          />
+        ))}
+      </div>
       <div>
         <FDPortfolio />
       </div>
