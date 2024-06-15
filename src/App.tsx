@@ -5,6 +5,7 @@ import PlanCard from './components/cards/PlanCard';
 import Heading from './components/common/Heading';
 import FDPortfolio from './components/charts/FDPortfolio';
 import GetAnswerSlider from './components/slider/GetAnswerSlider';
+import Navbar from './components/common/Navbar';
 
 const App: React.FC = () => {
 
@@ -13,6 +14,8 @@ const App: React.FC = () => {
 
   return (
     <div className='bg-[#F7F8FA] '>
+
+      <Navbar />
       <Heading title={" Welcome, Johan Paul"} />
 
       <div>
