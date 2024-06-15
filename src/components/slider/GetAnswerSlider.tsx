@@ -23,7 +23,7 @@ const GetAnswerSlider: React.FC<GetAnswerSliderProps> = ({ data }) => {
   };
 
   return (
-    <div className="min-w-full p-4">
+    <div className="min-w-full p-4 overflow-hidden">
       <div className="flex items-center justify-between min-w-full">
         <div>
           <Heading title="Get Answer" subText="to all your questions" className="m-2" />

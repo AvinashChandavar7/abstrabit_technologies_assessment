@@ -30,8 +30,8 @@ const InterestUptoCard: React.FC<InterestUptoCardProps> = ({
   checkedImg, iconSrc, highlightBg, buttonColor, bgColor,
 }) => {
   return (
-    // <div>/
-    <div className="min-w-[398px] min-h-[202px] h-full shadow-sm shadow-[0px 5px 10px #0000000D] border-white border-4 px-2  flex flex-col justify-center gap-4" style={{ backgroundColor: bgColor }}>
+
+    <div className="min-w-[398px] min-h-[202px] h-full shadow-sm shadow-[0px 5px 10px #0000000D] border-white border-4 px-2  flex flex-col justify-center lg:gap-4" style={{ backgroundColor: bgColor }}>
       <div className="flex items-center gap-2">
         <img src={iconSrc} alt="icons" className="mix-blend-multiply" />
         <h1>{bankName}</h1>
@@ -53,7 +53,7 @@ const InterestUptoCard: React.FC<InterestUptoCardProps> = ({
         </button>
       </div>
     </div>
-    // </div>
+
   );
 };
 

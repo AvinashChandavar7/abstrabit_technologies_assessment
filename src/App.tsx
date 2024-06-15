@@ -1,12 +1,13 @@
 import React from 'react';
-import InterestUptoCard from './components/cards/InterestUptoCard';
+
 import { InterestUptoCardData, getAnswerCardData, planCardData } from './constants/data';
-import PlanCard from './components/cards/PlanCard';
 import Heading from './components/common/Heading';
-import FDPortfolio from './components/charts/FDPortfolio';
-import GetAnswerSlider from './components/slider/GetAnswerSlider';
 import Navbar from './components/common/Navbar';
+import FDPortfolio from './components/charts/FDPortfolio';
 import FDTimeline from './components/calendar/FDTimeline';
+import InterestUptoCard from './components/cards/InterestUptoCard';
+import GetAnswerSlider from './components/slider/GetAnswerSlider';
+import PlanCard from './components/cards/PlanCard';
 
 const App: React.FC = () => {
   return (
@@ -18,13 +19,13 @@ const App: React.FC = () => {
 
         <Heading title={" Welcome, Johan Paul"} className='my-5' />
 
-        <div className='flex items-center justify-center gap-5 pb-5'>
+        <div className='flex flex-col items-center justify-center gap-5 pb-5 lg:flex-row'>
           <FDPortfolio />
           <FDTimeline />
         </div>
 
-        <div className='flex items-start justify-center gap-4 items-'>
-          <div className='grid w-full grid-cols-2 gap-2'>
+        <div className='flex flex-col items-start justify-center gap-4 lg:flex-row '>
+          <div className='grid w-full grid-cols-1 gap-2 lg:grid-cols-2'>
             {
               InterestUptoCardData.map((item) => (
                 <InterestUptoCard
@@ -41,6 +42,7 @@ const App: React.FC = () => {
                 />
               ))
             }
+
 
             <div className='w-full col-span-2 '>
               <GetAnswerSlider data={getAnswerCardData} />
