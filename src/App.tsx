@@ -12,8 +12,9 @@ import PlanCard from './components/cards/PlanCard';
 const App: React.FC = () => {
   return (
     <main className='bg-[#F7F8FA] w-full h-full '>
-      <Navbar />
 
+
+      <Navbar />
 
       <div className='mx-20'>
 

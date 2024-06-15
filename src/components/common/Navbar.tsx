@@ -4,7 +4,7 @@ import SupportMenu from './SupportMenu'
 
 const Navbar: React.FC = () => {
   return (
-    <nav className='flex items-center justify-between w-full px-10 py-4 bg-white h-fit'>
+    <nav className='flex items-center justify-between w-full px-20 py-4 bg-white h-fit'>
       <div>
         <img src="/public/assets/logo.svg" alt="logo" />
       </div>
