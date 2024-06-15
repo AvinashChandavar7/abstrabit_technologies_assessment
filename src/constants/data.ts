@@ -113,21 +113,20 @@ export const fDPortfolioData: DataItem[] = [
 export const getAnswerCardData: AnswerCardDataProps[] = [
   {
     id: 1,
-    title: 'How FDs are taxed',
+    title: 'How FDs are taxed1',
     content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     link: '#',
   },
   {
     id: 2,
-    title: 'How FDs are taxed',
+    title: 'How FDs are taxed2',
     content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     link: '#',
   },
   {
     id: 3,
-    title: 'How FDs are taxed',
+    title: 'How FDs are taxed3',
     content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     link: '#',
   },
-
 ];

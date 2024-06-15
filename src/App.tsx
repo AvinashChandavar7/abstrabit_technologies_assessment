@@ -4,7 +4,7 @@ import { InterestUptoCardData, getAnswerCardData, planCardData } from './constan
 import PlanCard from './components/cards/PlanCard';
 import Heading from './components/common/Heading';
 import FDPortfolio from './components/charts/FDPortfolio';
-import GetAnswerCard from './components/cards/GetAnswerCard';
+import GetAnswerSlider from './components/slider/GetAnswerSlider';
 
 const App: React.FC = () => {
 
@@ -12,25 +12,19 @@ const App: React.FC = () => {
 
 
   return (
-    <>
+    <div className='bg-[#F7F8FA] '>
       <Heading title={" Welcome, Johan Paul"} />
 
       <div>
-        {getAnswerCardData.map((item) => (
-          <GetAnswerCard
-            key={item.id}
-            id={item.id}
-            title={item.title}
-            content={item.content}
-            link={item.link}
-          />
-        ))}
+        <GetAnswerSlider data={getAnswerCardData} />
       </div>
       <div>
         <FDPortfolio />
       </div>
 
-      <div className='bg-[#F7F8FA] '>
+
+
+      <div className='flex'>
 
 
         {InterestUptoCardData.map((item) => (
@@ -66,7 +60,7 @@ const App: React.FC = () => {
         </div>
 
       </div>
-    </>
+    </div>
   );
 };
 
