@@ -6,6 +6,7 @@ import Heading from './components/common/Heading';
 import FDPortfolio from './components/charts/FDPortfolio';
 import GetAnswerSlider from './components/slider/GetAnswerSlider';
 import Navbar from './components/common/Navbar';
+import FDTimeline from './components/calendar/FDTimeline';
 
 const App: React.FC = () => {
 
@@ -23,6 +24,8 @@ const App: React.FC = () => {
       </div>
       <div>
         <FDPortfolio />
+
+        <FDTimeline />
       </div>
 
 
