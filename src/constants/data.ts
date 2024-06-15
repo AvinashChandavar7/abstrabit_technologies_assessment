@@ -1,3 +1,5 @@
+import { DataItem } from "../components/charts/FDPortfolio";
+
 export const InterestUptoCardData = [
   {
     id: 1,
@@ -99,3 +101,10 @@ export const planCardData = [
     btn2: "Compare other FDs"
   },
 ]
+
+export const fDPortfolioData: DataItem[] = [
+  { name: 'Bajaj Finserv', value: 25000, percentage: 25, color: "#6C63FF" },
+  { name: 'Shriram Finance', value: 20000, percentage: 20, color: "#FA9D17" },
+  { name: 'Mahindra Finance', value: 15000, percentage: 15, color: "#B9C606" },
+  { name: 'Utkarsh Small Finance Bank', value: 40000, percentage: 40, color: "#59CBD3" },
+];

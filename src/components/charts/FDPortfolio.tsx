@@ -1,7 +1,8 @@
 import React, { useState, ChangeEvent } from 'react';
 import { PieChart, Pie, Cell, Tooltip, Legend, LegendProps } from 'recharts';
+import { fDPortfolioData } from '../../constants/data';
 
-interface DataItem {
+export interface DataItem {
   name: string;
   value: number;
   percentage: number;
@@ -22,13 +23,6 @@ interface CustomLabelProps {
   index: number;
   selectedMetric: keyof DataItem;
 }
-
-const data: DataItem[] = [
-  { name: 'Bajaj Finserv', value: 25000, percentage: 25, color: "#6C63FF" },
-  { name: 'Shriram Finance', value: 20000, percentage: 20, color: "#FA9D17" },
-  { name: 'Mahindra Finance', value: 15000, percentage: 15, color: "#B9C606" },
-  { name: 'Utkarsh Small Finance Bank', value: 40000, percentage: 40, color: "#59CBD3" },
-];
 
 const FDPortfolio: React.FC = () => {
   const [selectedMetric, setSelectedMetric] = useState<keyof DataItem>('value');
@@ -65,12 +59,12 @@ const FDPortfolio: React.FC = () => {
           dominantBaseline="central"
           className="text-sm font-semibold text-center text-balance"
         >
-          {`${data[index][selectedMetric]} (${data[index].percentage}%)`}
+          {`${fDPortfolioData[index][selectedMetric]} (${fDPortfolioData[index].percentage}%)`}
         </text>
       );
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [selectedMetric, data]
+    [selectedMetric, fDPortfolioData]
   );
 
   return (
@@ -93,7 +87,7 @@ const FDPortfolio: React.FC = () => {
 
       <PieChart width={550} height={300}>
         <Pie
-          data={data}
+          data={fDPortfolioData}
           dataKey={selectedMetric}
           nameKey="name"
           cx="50%"
@@ -103,7 +97,7 @@ const FDPortfolio: React.FC = () => {
           labelLine={false}
           label={renderCustomizedLabel}
         >
-          {data.map((entry, index) => (
+          {fDPortfolioData.map((entry, index) => (
             <Cell key={`cell-${index}`} fill={entry.color} />
           ))}
         </Pie>
